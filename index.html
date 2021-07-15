@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div class="sidebar">
+        <style>
+            .sidebar {
+                position: fixed;
+                width: 400px;
+                height: 100vh;
+                background-color: #f1f1f1;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform .5s;
+            }
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .sidebar > div {
+                display: none;
+            }
+
+            .sidebar.add .add-form{
+                display: block;
+            }
+
+            .sidebar.edit .edit-form{
+                display: block;
+            }
+        </style>
+        <div class="add-form">
+            <input type='date' id="addFormDate">    
+            <input type="text" id="addFormInput" />
+            <button id="addFormBtn">Add task</button>
+            
+        </div>
+        <div class="edit-form">
+            <input type="date" id="editFormDate" />
+            <input type="text" id="editFormInput" />
+            <button id="editFormBtn">Edit Task</button>
+            
+        </div>
+        <button class="close-sidebar">Cancel</button>
+    </div>
+    <div id="app">
+    </div>
+
+    <button class="new-task">New Task</button>
+
+    <!-- <div class="form-add">
+        <button id="add">add</button>
+        <input type="text" id="task" />
+        <input type='date' id="dateTask">
+    </div> -->
+</body>
+
+<script type="module" src="js/index.js"></script>
+</body>
+
+</html>
+
+<!--  
+сделать getItem скрытым
+метод static
+extend
+private
+  -->
