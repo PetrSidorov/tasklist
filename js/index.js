@@ -46,7 +46,6 @@ function addNewTask() {
     });
 
     localStorage.setItem('toDoListDB', JSON.stringify(tasks));
-    // const lastIndex = tasks.length - 1;
     addTask(task);
     fieldTask.value = '';
     fieldTask.focus();
