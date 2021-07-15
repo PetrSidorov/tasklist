@@ -52,17 +52,17 @@ function addNewTask() {
     fieldTask.focus();
 }
 
-buttonAdd.onclick = () => {
-    addNewTask();
-}
+// buttonAdd.onclick = () => {
+//     addNewTask();
+// }
 
-fieldTask
-    .addEventListener("keyup", function (event) {
+// fieldTask
+//     .addEventListener("keyup", function (event) {
 
-        if (event.keyCode === 13) {
-            buttonAdd.click();
-        }
-    });
+//         if (event.keyCode === 13) {
+//             buttonAdd.click();
+//         }
+//     });
 
 
 addFormBtn.onclick = () => {
